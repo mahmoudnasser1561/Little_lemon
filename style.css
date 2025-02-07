@@ -1,0 +1,154 @@
+body {
+  font-family: "Markazi Text", serif;
+  background-color: #edefee;
+  /* background-color: #495e57; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+header {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 0;
+  color: white;
+  margin-bottom: 30px;
+}
+
+header > img {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid yellow; */
+  background-color: #333333;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+header nav .navigation {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+header nav .navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+header nav .navigation a:hover {
+  border-bottom: 2px solid white;
+}
+
+.ad {
+  background-image: url("./media/ad.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 10px 20px;
+  /* text-align: center;  */
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.ad::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.ad h1,
+.ad p {
+  position: relative;
+  z-index: 2;
+}
+
+.ad h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.ad p {
+  width: 75%;
+  font-size: 20px;
+}
+
+.main-content {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.card {
+  /* border: 1px solid red; */
+  padding: 10px;
+  background-color: #f4e5d6;
+  border-radius: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-img {
+  max-width: 100%;
+}
+
+.poster {
+  font-weight: 900;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+footer:after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  background-color: #000;
+  top: 15px;
+  right: 0;
+}
+
+.footer-img {
+  width: 50px;
+  height: auto;
+}
